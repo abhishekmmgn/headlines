@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: rgb(0, 0, 255);
+    --foreground: rgb(23, 22, 21);
+
+    --card: rgb(0, 0, 255);
+    --card-foreground: rgb(23, 22, 21);
+
+    --popover: rgb(0, 0, 255);
+    --popover-foreground: rgb(23, 22, 21);
+
+    --primary: rgb(38, 37, 34);
+    --primary-foreground: rgb(247, 245, 244);
+
+    --secondary: rgb(233, 206, 239);
+    --secondary-foreground: rgb(38, 37, 34);
+
+    --muted: rgb(233, 206, 239);
+    --muted-foreground: rgb(77, 70, 68);
+
+    --accent: rgb(233, 206, 239);
+    --accent-foreground: rgb(38, 37, 34);
+
+    --destructive: rgb(153, 0, 98);
+    --destructive-foreground: rgb(247, 245, 244);
+
+    --border: rgb(31, 230, 228);
+    --input: rgb(31, 230, 228);
+    --ring: rgb(23, 22, 21);
+
+    --left-lean: rgb(128 39 39);
+    --right-lean: rgb(32 73 134);
+    --center-lean: rgb(240 240 240);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: rgb(5, 5, 5);
+    --foreground: rgb(240, 240, 240);
+
+    --card: rgb(12, 12, 12);
+    --card-foreground: rgb(240, 240, 240);
+
+    --popover: rgb(16, 16, 16);
+    --popover-foreground: rgb(240, 240, 240);
+
+    --primary: rgb(200, 200, 200);
+    --primary-foreground: rgb(5, 5, 5);
+
+    --secondary: rgb(16, 16, 16);
+    --secondary-foreground: rgb(200, 200, 200);
+
+    --muted: rgb(24, 24, 24);
+    --muted-foreground: rgb(148, 148, 148);
+
+    --accent: rgb(77, 0, 0); /*CHANGE*/
+    --accent-foreground: rgb(247, 245, 244); /*CHANGE*/
+
+    --destructive: rgb(160, 2, 2);
+    --destructive-foreground: rgb(247, 245, 244); /*CHANGE*/
+
+    --border: rgb(28, 28, 28);
+    --input: rgb(28, 28, 28);
+    --ring: rgb(128, 128, 128);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
