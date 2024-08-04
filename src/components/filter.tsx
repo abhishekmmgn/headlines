@@ -17,7 +17,7 @@ import {
 export default function Filter() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger className="absolute bottom-0 right-0 z-50">
         <IoFilter className="h-5 w-5 text-muted-foreground" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

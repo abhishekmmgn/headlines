@@ -88,7 +88,7 @@ export default function Finder() {
                   <FormControl>
                     <Textarea
                       {...field}
-                      placeholder="Search news, articles and more"
+                      placeholder="Find news, articles and more"
                       className="text-sm+ max-h-20 max-w-xl mx-auto border-b bg-clip-padding backdrop-filter backdrop-blur-sm bg-secondary md:min-h-20"
                     />
                   </FormControl>
