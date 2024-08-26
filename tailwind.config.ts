@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        fontDefault: ["Helvetica", "sans-serif"],
+        fontBold: ["Helvetica-Bold", "sans-serif"],
+        fontLight: ["Helvetica-Light", "sans-serif"],
+        fontOblique: ["Helvetica-Oblique", "sans-serif"],
+      },
       fontSize: {
         xs: "0.75rem",
         "xs+": "0.8125rem",
